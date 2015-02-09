@@ -19,7 +19,7 @@ var server = http.createServer(function(request, response){
             response.end(data);
         }
     });
-    fs.appendFile("./public/test.txt", data(request,time), function(error){
+    fs.appendFile("./public/test.csv", data(request,time), function(error){
         if(error){
             console.log("An error has occurred" + error);
         }
